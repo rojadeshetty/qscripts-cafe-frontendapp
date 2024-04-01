@@ -1,0 +1,245 @@
+/* Applying the css styles for Home section */
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:130px;
+}
+
+.home-image-container {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.home-coffee-img{  
+  width:600px;
+  height:600px;
+  object-fit: contain;
+  margin-right: 10px;  /*resizing the image of the home page*/
+  }
+
+.home-content-container {
+  flex: 2;
+  text-align: justify;
+}
+
+.home-Heading{
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+  color: green;
+ }
+
+.home-contact-content{
+  color:purple;
+  font-family:cursive;
+}
+
+.contact-Button{
+  font-size: 18px;
+  padding: 5px;
+  background-color: lightcoral;
+  }
+
+/* Applying the css styles for the AboutUS section */
+
+.aboutus-welcome-heading{
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.aboutus-quote{
+  text-align: center;
+  font-family:'Courier New', Courier, monospace;
+  font-weight:bolder;
+  color:darkgreen;
+}
+
+.aboutus-content{
+  text-align: justify;
+  margin: 50px;
+}
+
+/* Applying CSS styles for Menu component */
+
+.menu-main-heading{
+  color: darkolivegreen;
+  font-family:'Times New Roman', Times, serif;
+  font-size:3rem;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.coffee-menu-heading{
+  color:brown;
+  font-size: 2rem;
+  font-family: cursive;
+}
+
+.pastries-menu-heading{
+  color:brown;
+  font-size: 2rem;
+  font-family: cursive;
+}
+
+.menu-end-quote{
+  text-align: center;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  color:#482121;
+  text-decoration:underline;
+}
+
+/* Applying the CSS styles for the ContactUs section */
+
+ .contactus-para{
+  font-size: large;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 55px;
+}
+
+.contactus-heading{
+  color:#9B4444;
+}
+
+.contactus-form{
+  display: inline-block;
+  background-color:darksalmon;
+  padding: 50px;
+  margin-left: 550px;
+  margin-top: 40px;
+}
+
+.contactus-form-label{
+  display: inline-block;
+  width: 100px;
+  margin: 20px;
+}
+
+.contactus-submit-button{
+  position: relative;
+  left: 120px; 
+  top:20px;
+}
+
+/* Applying the CSS for Navbar */
+
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color:#9B4444;
+  height: 50px; /*Adjusting the Navbar*/
+}
+
+.navLink{
+  font-size: 2rem; 
+  align-items: center;
+  margin: 6px;
+  color: white;
+  text-decoration: solid;  /*Adjusting the text in navbar*/
+}
+
+/* Creating the responsive page */
+
+/* Common styles */
+
+.menu-heading,
+.coffee-menu-heading,
+.pastries-menu-heading {
+  font-size: 2rem;
+  font-family: cursive;
+}
+
+/* Styles for extra small screens (phones) */
+
+@media only screen and (max-width: 575.98px) {
+  .home-container {
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+  }
+
+  .home-content-container {
+    flex: 1;
+    margin: 20px;
+  }
+
+  .home-image-container {
+    flex: 1;
+    margin-bottom: 20px;
+  }
+
+  .contactus-form {
+    margin-left:20px;
+  }
+}
+
+/* Styles for small screens (tablets) */
+
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+  .home-container {
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+  }
+
+  .home-content-container {
+    flex: 1;
+    margin: 30px;
+  }
+
+  .home-image-container {
+    flex: 1;
+    margin-bottom: 20px;
+  }
+
+  .contactus-form {
+    margin-left: 50px;
+  }
+}
+
+/* Styles for medium screens (desktops, tablets) */
+
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+  .home-container {
+    margin: 100px;
+  }
+
+  .home-image-container {
+    margin-bottom: 20px;
+  }
+
+  .home-content-container {
+    margin: 50px;
+  }
+
+  .contactus-form {
+    margin-left: 150px;
+  }
+}
+
+/* Styles for large screens (desktops) */
+
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+  .home-container {
+    margin: 150px;
+  }
+
+  .contactus-form {
+    margin-left: 250px;
+  }
+}
+
+/* Styles for extra large screens (large desktops) */
+
+@media only screen and (min-width: 1200px) {
+  .home-container {
+    margin: 200px;
+  }
+
+  .contactus-form {
+    margin-left: 350px;
+  }
+}
